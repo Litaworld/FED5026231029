@@ -111,13 +111,13 @@
             margin-bottom: 20px;
         }
         .btn-edit {
-    width: 100%;       /* Buat tombol penuh */
-    max-width: 300px;  /* Batasi agar tidak terlalu panjang */
-    padding: 12px;     /* Tambah padding agar lebih proporsional */
-    font-size: 16px;   /* Perbesar ukuran teks */
-    font-weight: bold; /* Buat teks lebih tegas */
-    border-radius: 5px; /* Tambahkan sudut membulat */
-    text-align: center; /* Pusatkan teks */
+    width: 100%;       
+    max-width: 300px;  
+    padding: 12px;     
+    font-size: 16px;   
+    font-weight: bold; 
+    border-radius: 5px; 
+    text-align: center; 
 }
     </style>
 </head>
@@ -225,7 +225,6 @@
             document.querySelector('.sidebar').classList.toggle('active');
             document.querySelector('.content').classList.toggle('active');
             
-            // Change arrow direction based on sidebar state
             const arrowIcon = document.querySelector('.sidebar-toggle i');
             if (document.querySelector('.sidebar').classList.contains('active')) {
                 arrowIcon.classList.remove('fa-arrow-left');
@@ -236,7 +235,6 @@
             }
         }
         
-        // Close sidebar when clicking outside
         document.addEventListener('click', function(event) {
             const sidebar = document.querySelector('.sidebar');
             const toggleBtn = document.querySelector('.sidebar-toggle');
